@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
     <body>
-        <h2>JavaScript  Arrays Methods</h2>
-        <p id="myjoin"></p>
-        <p id="myfirstpop"></p>
-        <p>After poping the array is:</p>
-        <p id="afterfirstpop"></p>
-
+        <h2>JavaScript Call stack </h2>
+    <p>Do a calculation then displaythe result</p>
+    <p id="demo"></p>
         <script>
-    var fruits = ["Banana", "Orange", "Apple", "Mango"]
-    document.getElementById("myjoin").innerHTML = fruits.join(" / ");
-    document.getElementById("myfirstpop").innerHTML = fruits.pop();
-    document.getElementById("afterfirstpop").innerHTML = fruits;
+    function add(a, b) {
+        return a + b;
+    }
+    function average(a, b) {
+        return add(a, b) / 2;
+    }
+    document.getElementById("demo").innerHTML = "The result is : " + average(5, 15);
         </script>
  
    </body>
